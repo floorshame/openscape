@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <title>js failure</title>
@@ -13,16 +13,36 @@
     <div class="sidebar">
         <p class="sidebar_logo">open<span style="color: var(--accent_color);">scape</span></p>
 
-        <section class="sidebar_section sidebar_section_top">
-            <p class="sidebar_section_header">home</p>
-            <div id="sidebar_section_home">
-                <button class="sidebar_section_button sidebar_section_button_active">inventory</button>
-                <button class="sidebar_section_button">inventory</button>
-                <button class="sidebar_section_button">inventory</button>
-                <button class="sidebar_section_button">inventory</button>    
+        <section class="sidebar_section">
+            <p class="sidebar_section_header">main</p>
+            <div id="sidebar_section_main">
             </div>
         </section>
-        
+
+        <section class="sidebar_section">
+            <p class="sidebar_section_header">skills</p>
+            <div id="sidebar_section_skills">
+            </div>
+        </section>
+
+    </div>
+
+    <div class="page">
+        <!-- main -->
+        <section id="page_inventory">
+            inventory
+        </section>
+        <section id="page_shop">
+            shop
+        </section>
+        <section id="page_settings">
+            settings
+        </section>
+        <!-- skills -->
+        <section id="page_mining">
+            mining
+        </section>
+
     </div>
 
     <script src="assets/js/variables.js"></script>
