@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+:root {
+    --background_color: rgb(40, 40, 40);
+    --foreground_color: rgb(26, 26, 26);
+    --text_color: rgb(255, 255, 255);
+    --accent_color: rgb(240, 128, 255);
+    --text_color_accent: rgb(0, 0, 0);
+
+    --transition: 0.3s;
+    --border_radius: 7px;
+}
+html {
+    background-color: var(--background_color);
+}
+
+.sidebar {
+    top: 0;
+    left: 0;
+    background-color: var(--foreground_color);
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+}
+.sidebar_logo {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text_color);
+    font-size: 20px;
+    border-bottom: 1px solid var(--accent_color);
+    border-image: linear-gradient(90deg, var(--accent_color), #00000000) 1;
+}
+.sidebar_section_button {
+    width: 100%;
+    border: 1px solid var(--background_color);
+    background-color: transparent;
+    padding: 7px;
+    border-radius: var(--border_radius);
+    margin-top: 7px;
+    transition: var(--transition);
+    color: var(--text_color);
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+}
+.sidebar_section_button:hover {
+    background-color: var(--background_color);
+}
+.sidebar_section_button_active {
+    border-right: 1px solid var(--accent_color);
+    border-left: 1px solid var(--accent_color);
+}
+.sidebar_section_header {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: var(--text_color);
+    opacity: 0.8;
+    font-family: 'JetBrains Mono', monospace;
+
+}
